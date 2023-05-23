@@ -4,7 +4,7 @@
 
 Samuel, Milan - Italy.
 
-🏢 Data Analyst for TUI Musement
+🏢 Associate Data Scientist for TUI Musement
 
 🧰 I build with: SQL, MySQL, Python 
 
