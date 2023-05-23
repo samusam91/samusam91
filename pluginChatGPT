@@ -1,0 +1,156 @@
+ChatGPT plugins (openai.com)
+
+General informations:
+
+ChatGPT have implemented initial support for plugins.
+Plugins are tools designed specifically for language models with safety as a core principle, and help ChatGPT access up-to-date information, run computations, or use third-party services.
+
+These plugins enable ChatGPT to interact with APIs defined by developers, enhancing ChatGPT's capabilities and allowing it to perform a wide range of actions. Plugins enable ChatGPT to do things like:
+
+Retrieve real-time information; e.g., sports scores, stock prices, the latest news, etc.
+Retrieve knowledge-base information; e.g., company docs, personal notes, etc.
+Assist users with actions; e.g., booking a flight, booking experiences, ordering food, etc.
+Plugins are available only for GPT-4 and it's a Beta version 
+
+Activities	x	x	x	x
+Hotel	
+x	x	x
+Availability 	x	x	x	
+Car Product	
+x	
+x
+Flight	
+x	x	x
+Recommendation and Itinerary Planning	
+
+x	
+Locale Support	
+
+x	
+Mandatory parameters 	
+x	
+x
+Specific database 	
+
+x	
+GetYourGuide 
+The GetYourGuide plugin is a tool that help AI, to retrieve the real-time data from the GYG platform.
+
+It doesn't interact with a specific database. Instead, it communicates with the GYG API.
+
+Here's what the GYG plugin can do:
+
+Search for Activities: The plugin may look for activities in a certain area and display a list of available experiences. It can filter results based on a variety of criteria such as date, category, price range, and more.
+Provide Detailed Information: The plugin can provide detailed information for each activity, such as the title, description, price, availability, and a link to the booking page. It can also provide data on reviews and ratings.
+Check Availability: The plugin can determine whether or not specified activities are available on a given date and time.
+It is crucial to remember, however, that while the GYG plugin may give information and verify availability, it cannot make bookings. To complete their bookings, users must go to the GYG portal.
+
+The GetYourGuide plugin doesn't have any mandatory parameters. 
+
+
+
+Some example below:
+
+
+
+
+
+Expedia
+The Expedia plugin doesn't need a specific database. It interacts with Expedia's API to fetch real-time data related to travel accommodations, flights, car rentals, and activities.
+
+Here is a list of what it is capable of based on a destination that you choice:
+
+Products for lodging: it can recommend the top 3 hotels in the location you've chosen. 
+Aviation Products: suggest flights for the destination. 
+Production Products: recommend activities you might like at your trip. 
+Car Accessories: I can give you recommendations for automobile rentals.
+Note: there are some mandatory parameters to make a good process. let's see:
+
+Lodging Products: The only mandatory parameter is the destination. This can be a city, address, airport, or a landmark.
+Flight Products: There are two mandatory parameters - the origin and the destination. These can be location names or airport codes.
+Activity Products: The only mandatory parameter is the destination. This can be a city name, street address, three-letter IATA Airport Code, or a landmark name.
+Car Products: The only mandatory parameter is the pickup location. This can be a city name, address, airport code, or a landmark name.
+
+
+Prompt: can you recommend me the best solution for a holiday from 15th July to 20th July in Palma di Maiorca, flight needed from Milan Italy, best 3 hotels, best activities to do, car needed.
+
+Sure, here are the best options for your holiday in Palma de Mallorca from July 15th to July 20th, 2023:
+
+Flights:
+
+easyJet Flight 3749 from Milan Malpensa to Palma de Mallorca. The flight duration is 1h 45m, and the price per ticket is $114.68 USD.
+Vueling Airlines Flight 6335 and 3922 from Milan Malpensa to Barcelona, then Barcelona to Palma de Mallorca. The total flight duration is 5h 20m, and the price per ticket is $130.65 USD.
+Iberia Flight 3255 and 3918 from Milan Linate to Madrid, then Madrid to Palma de Mallorca. The total flight duration is 12h 10m, and the price per ticket is $135.57 USD.
+
+Hotels:
+
+Pure Salt Port Adriano Hotel & SPA - Adults Only: A luxury hotel situated by the sea with a full-service spa and a marina. The average nightly price is $429.21 USD.
+LJs Ratxo Eco Luxury Retreat: A smoke-free hotel featuring 2 restaurants, a full-service spa, and an indoor pool. The average nightly price is $289.54 USD.
+Castillo Hotel Son Vida, a Luxury Collection Hotel, Mallorca - Adults Only: A smoke-free hotel near the airport with 2 restaurants, an indoor pool, and an outdoor pool. The average nightly price is $469.96 USD.
+
+Activities:
+
+Explore Mallorca: Majorica Pearl Shop and Caves of Drach for $55.27 USD.
+Mallorca in One Day Sightseeing Tour with Boat Ride and Vintage Train for $98.62 USD.
+[Palma de Mallorca Hop-On Hop-Off Bus Tour](https://www.expedia.com/go/activity/detail/172079/Sure, here are the best options for your holiday in Palma de Mallorca from July 15th to July 20th, 2023:
+
+Flights:
+
+easyJet Flight 3749 from Milan Malpensa to Palma de Mallorca. The flight duration is 1h 45m, and the price per ticket is $114.68 USD.
+Vueling Airlines Flight 6335 and 3922 from Milan Malpensa to Barcelona, then Barcelona to Palma de Mallorca. The total flight duration is 5h 20m, and the price per ticket is $130.65 USD.
+Iberia Flight 3255 and 3918 from Milan Linate to Madrid, then Madrid to Palma de Mallorca. The total flight duration is 12h 10m, and the price per ticket is $135.57 USD.
+
+Hotels:
+
+Pure Salt Port Adriano Hotel & SPA - Adults Only: A luxury hotel situated by the sea with a full-service spa and a marina. The average nightly price is $429.21 USD.
+LJs Ratxo Eco Luxury Retreat: A smoke-free hotel featuring 2 restaurants, a full-service spa, and an indoor pool. The average nightly price is $289.54 USD.
+Castillo Hotel Son Vida, a Luxury Collection Hotel, Mallorca - Adults Only: A smoke-free hotel near the airport with 2 restaurants, an indoor pool, and an outdoor pool. The average nightly price is $469.96 USD.
+
+Activities:
+
+Explore Mallorca: Majorica Pearl Shop and Caves of Drach for $55.27 USD.
+[Mallorca in One Day Sightseeing Tour with Boat Ride and Vintage Train]
+
+
+
+Note: The plugin give me two times the response, lost the car product.
+
+It's not possible to make a reservations. 
+
+
+
+Trip.com
+The Trip.com plugin it's designed to make travel planning easier and more efficient. It interacts with Trip.com's own database to fetch flight and hotel information.
+
+Here are some of the key features and functionalities:
+
+Flight Search: The plugin can provide flight information such as price, origin, destination, travel date, take-off time, arrival time, airline, flightway, seat grade, flight number, passenger type, transfer type, and more. Users can search for flights by specifying the origin city code, destination city code, departure date, return date, and whether they want a one-way or round trip.
+Hotel Search: The plugin can also provide hotel information such as price, hotel name, room type, city, check-in date, check-out date, and more. Users can search for hotels by specifying the city name, the number of top hotels they want to see, check-in and check-out dates.
+Customized Travel Product Recommendation and Itinerary Planning: The plugin can provide customized travel product recommendations and help with itinerary planning. This includes recommendations for hotels and flights based on the user's preferences and needs.
+Locale Support: The plugin supports multiple locales, allowing users from different regions to use the service in their preferred language. The locale parameter in the API requests is used to specify the language and country of the user. Here are some examples of supported locales: 'en-US' for English (United States)
+'zh-CN' for Chinese (China)
+'es-ES' for Spanish (Spain)
+'fr-FR' for French (France)
+'de-DE' for German (Germany)
+'it-IT' for Italian (Italy)
+'ja-JP' for Japanese (Japan)
+'ko-KR' for Korean (Korea)
+'ru-RU' for Russian (Russia)
+
+
+Kayak
+The Kayak plugin is a tool that help AI, to retrieve the real-time data from the Kayak platform API to fetch real-time information about flights, hotels, and car rentals. 
+
+Here's a brief overview of the available functions:
+
+searchFlights: This function allows you to search for flights based on various parameters such as origin, destination, departure and return dates, preferred carriers, and more. Mandatory parameters are origin and destination.
+
+searchStays: This function lets you search for accommodations in a specific city for certain dates. You can specify the number of adults and children, the number of rooms needed, and preferred amenities. Mandatory parameter is destination
+
+searchCars: This function allows you to search for rental cars based on pick-up and drop-off locations and dates. Mandatory parameter is origin.
+
+explore: This function provides recommendations for places you can travel to within a specified budget. You can provide your origin, preferred destinations, travel dates, and budget, and the function will suggest suitable destinations. Mandatory parameters are origin and budget USD.
+
+flightInsights: This function provides insights into flight prices for a specific route when the travel dates are flexible. It can show you when airfares are the lowest for your desired trip. Mandatory parameters are origin and destination.
+
+Note: all these functions provide you the most relevant and cost-effective travel options based on the parameters inserted.
